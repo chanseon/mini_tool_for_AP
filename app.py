@@ -13,8 +13,8 @@ def if_general_conversation(s):  #request 뒤에만 갖고올 수 있도록 세�
 
 st.title("하이헬로우")
 #turn_num = st.text_area("턴 수를 입력하세요:")
-turn_num = st.radio(label='▶️ 턴 수 선택',	options=['1','2','3','4','5','6 이상'], key='radiobox',horizontal=True)
-if turn_num == '6 이상':
+turn_num = st.radio(label='▶️ 해당 세션 전체 턴 수 선택',	options=['1','2','3','4','5','6턴 이상'], key='radiobox',horizontal=True)
+if turn_num == '6턴 이상':
   turn_num = st.text_area("턴 수를 입력하세요:")
 raw_txt = st.text_area("log를 입력하세요:")
 
