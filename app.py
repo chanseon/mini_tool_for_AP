@@ -24,7 +24,7 @@ if st.button("해줘."):
   dict_obj = json.loads(raw_txt) #json 형태 딕셔너리로 변환
   text = dict_obj[0] #리스트 형태로 들어있어서 따로 지정
 
-  if turn_num == 1:
+  if turn_num == '1':
     ###planner_message (1턴인 경우 첫번째 발화)
     planner_message = text['bookkeeping_data']["run_data"]["planner_message"]["2"]
     #user
